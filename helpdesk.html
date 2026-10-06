@@ -3,19 +3,75 @@
 <head>
 
 
-<title>Help Desk</title>
+<title>COS10026 Unit Outline</title>
 <meta charset="UTF-8">
 <meta name ="description" content="">
 <meta name ="author" content ="Sammy">
 </head>
 
 
+</form>
 
 <body>
+<h1>CWA Help Desk Appointment</h1>
 
+<form action="submit.php" method="post">
+    <label for="student_id">Student ID</label>
+    <input type="text" id="student_id" name="student_id" required>
+    <br>
+    <label for="given_name">Given Name</label>
+    <input type="text" id="given_name" name="given_name" required>
+    <br>
+    <label for="family_name">Family Name</label>
+    <input type="text" id="family_name" name="family_name" required>
 
-<hr>
-
+</form>
+<form action="submit.php" method="post">
+    <fieldset>
+                <legend>Student Details</legend>
+            <label for="student_id">Student ID</label>
+    <input type="text" id="student_id" name="student_id" required>
+    <br>
+    <label for="given_name">Given Name</label>
+    <input type="text" id="given_name" name="given_name" required>
+    <label for="family_name">Family Name</label>
+    <input type="text" id="family_name" name="family_name" required>
+    </fieldset>
+    <fieldset>
+        <legend>Your Unit</legend>
+        <label for="unit">Your Unit:</label>
+        <br>
+        <input type="radio" id="COS10026" name="unit" value="COS10026">
+        <label for="COS10026">COS10026</label>
+        <input type="radio" id="COS60004" name="unit" value="COS60004">
+        <label for="COS60004">COS60004</label>
+        <input type="radio" id="COS60007" name="unit" value="COS60007">
+        <label for="COS60007">COS60007</label>
+        <br>
+        
+        <label for="tutor">Your Tutor:</label>
+        <select id="tutor" name="tutor">
+            <option value="tutor1">Dr. Hamada</option>
+            <option value="tutor2">Elon Musk</option>
+            <option value="tutor3">Confuscious</option>
+            <option value="tutor4">Mr. Foo Barr</option>
+        </select>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Issue</legend>
+        <label for="issue">Issue with:</label>
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="HTML" name="issue" value="HTML">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" id="CSS" name="issue" value="CSS">
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" id="JavaScript" name="issue" value="JavaScript">
+        <label for="PHP">PHP</label>
+        <input type="checkbox" id="PHP" name="issue" value="PHP">
+        <label for="MySQL">MySQL</label>
+        <input type="checkbox" id="MySQL" name="issue" value="MySQL">
+    </fieldset>
 <footer>
 </footer>
 
