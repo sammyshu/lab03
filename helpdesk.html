@@ -24,14 +24,14 @@
 
             <p>
                 <label for="student_id">Student ID</label>
-                <input type="text" id="student_id" name="student_id" required>
+                <input type="text" id="student_id" name="student_id" pattern = "\d{7,10}" required>
             </p>
 
             <p>
-                <label for="given_name">Given Name</label>
-                <input type="text" id="given_name" name="given_name" required>
+                <label for="given_name">Given Name</label>          <!--Any alphabetical input-->
+                <input type="text" id="given_name" name="given_name" pattern="[a-zA-Z ]{1,}" required>
                 <label for="family_name">Family Name</label>
-                <input type="text" id="family_name" name="family_name" required>
+                <input type="text" id="family_name" name="family_name" pattern="[a-zA-Z ]{1,}" required>
             </p>
 
         </fieldset>
@@ -86,16 +86,16 @@
         <fieldset>
             <legend>Preferred Date/Time</legend>
             <p>
-                <label for="date">Date</label>
+                <label for="date">Date</label> <!-- "pattern" and "placeholder" are not available for "date" -->
                 <input type="date" id="date" name="date" required>
             </p>
             <p>
-                <label for="time">Time</label>
+                <label for="time">Time</label> <!-- "pattern" and "placeholder" are not available for "time" -->
                 <input type="time" id="time" name="time" required>
             </p>
         </fieldset>
-        <input type="submit" value="Book Appointment">
-        <input type="reset" value="Reset form">
+        <input type="submit" value="Book Appointment" >
+        <input type="reset" value="Reset form" >
 </fieldset>
     </form>
 <footer>
