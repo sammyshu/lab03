@@ -13,67 +13,89 @@
 
 <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
     <fieldset>
-        <img src="logo.png" alt="Help Desk"> 
-        <h1>CWA Help Desk Appointment</h1>
-        <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.
-            Check Blackboard for when CWA tutors will be there.
-        </p>
-    <fieldset>
-    <legend>Student Details</legend>
-    <label for="student_id">Student ID</label>
-    <input type="text" id="student_id" name="student_id" required>
-    <br>
-    <label for="given_name">Given Name</label>
-    <input type="text" id="given_name" name="given_name" required>
-    <label for="family_name">Family Name</label>
-    <input type="text" id="family_name" name="family_name" required>
-    </fieldset>
-    <fieldset>
-        <legend>Your Unit</legend>
-        <br>
-        <input type="radio" id="COS10026" name="unit" value="COS10026" required>
-        <label for="COS10026">COS10026</label>
-        <input type="radio" id="COS60004" name="unit" value="COS60004">
-        <label for="COS60004">COS60004</label>
-        <input type="radio" id="COS60007" name="unit" value="COS60007">
-        <label for="COS60007">COS60007</label>
-        <br>
+            <img src="logo.png" alt="Help Desk"> 
+            <h1>CWA Help Desk Appointment</h1>
+            <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.
+                Check Blackboard for when CWA tutors will be there.
+            </p>
+        <fieldset>
+
+            <legend>Student Details</legend>
+
+            <p>
+                <label for="student_id">Student ID</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </p>
+
+            <p>
+                <label for="given_name">Given Name</label>
+                <input type="text" id="given_name" name="given_name" required>
+                <label for="family_name">Family Name</label>
+                <input type="text" id="family_name" name="family_name" required>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
         
-        <label for="tutor">Your Tutor:</label>
-        <select id="tutor" name="tutor">
-            <option value = "">Please Select</option>
-            <option value="tutor1">Dr. Hamada</option>
-            <option value="tutor2">Elon Musk</option>
-            <option value="tutor3">Confuscious</option>
-            <option value="tutor4">Mr. Foo Barr</option>
-        </select>
-        <br>
-    </fieldset>
-    <fieldset>
-    <legend>Issue</legend>
-    <p> 
-        <label for="HTML">HTML</label>
-        <input type="checkbox" checked="checked" id="HTML" name="issue" value="HTML">
-        <label for="CSS">CSS</label>
-        <input type="checkbox" checked="checked" id="CSS" name="issue" value="CSS">
-        <label for="JavaScript">JavaScript</label>
-        <input type="checkbox" checked="checked" id="JavaScript" name="issue" value="JavaScript">
-        <label for="PHP">PHP</label>
-        <input type="checkbox" checked="checked" id="PHP" name="issue" value="PHP">
-        <label for="MySQL">MySQL</label>
-        <input type="checkbox" checked="checked" id="MySQL" name="issue" value="MySQL">
-    <br>
-    <label for="comments">Comments</label>
-    <textarea placeholder="Write description of your problem here..." id="comments" name="comments" rows="4" cols="40"></textarea>
-    </p>
-    </fieldset>
-    <fieldset>
-    <legend>Preferred Date/Time</legend>
-        <input type="date" name="date" required>
-        <input type="time" name="time" required>
-    </fieldset>
-    <input type="submit" value="Book Appointment">
-    <input type="reset" value="Reset form">
+            <legend>Your Unit</legend>
+            <p>
+                <input type="radio" id="COS10026" name="unit" value="COS10026" required>
+                <label for="COS10026">COS10026</label>
+                <input type="radio" id="COS60004" name="unit" value="COS60004">
+                <label for="COS60004">COS60004</label>
+                <input type="radio" id="COS60007" name="unit" value="COS60007">
+                <label for="COS60007">COS60007</label>
+            </p>
+
+            
+            <p>
+                <label for="tutor">Your Tutor:</label>
+                <select id="tutor" name="tutor">
+                    <option value = "">Please Select</option>
+                    <option value="tutor1">Dr. Hamada</option>
+                    <option value="tutor2">Elon Musk</option>
+                    <option value="tutor3">Confuscious</option>
+                    <option value="tutor4">Mr. Foo Barr</option>
+                </select>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Issue</legend>
+            <p> 
+                <label for="HTML">HTML</label>
+                <input type="checkbox" checked="checked" id="HTML" name="issue" value="HTML">
+                <label for="CSS">CSS</label>
+                <input type="checkbox" checked="checked" id="CSS" name="issue" value="CSS">
+                <label for="JavaScript">JavaScript</label>
+                <input type="checkbox" checked="checked" id="JavaScript" name="issue" value="JavaScript">
+                <label for="PHP">PHP</label>
+                <input type="checkbox" checked="checked" id="PHP" name="issue" value="PHP">
+                <label for="MySQL">MySQL</label>
+                <input type="checkbox" checked="checked" id="MySQL" name="issue" value="MySQL">
+            </p>
+
+            <p>
+                <label for="comments">Description of Issue</label>
+            </p>
+            <p>
+                <textarea placeholder="Write description of your problem here..." id="comments" name="comments" rows="4" cols="40"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferred Date/Time</legend>
+            <p>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </p>
+            <p>
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </p>
+        </fieldset>
+        <input type="submit" value="Book Appointment">
+        <input type="reset" value="Reset form">
 </fieldset>
     </form>
 <footer>
